@@ -22,3 +22,32 @@
 .intro h1 span{
   display: block;
 }
+
+.sub-intro{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .main-title{
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+
+    &::after{
+      content: "";
+      background-color: var(--color-text-primary);
+      height: 10px;
+      width: 120%;
+      margin-left: -10%;
+
+      display: block;
+    }
+
+  }
+  .sub-title{
+    margin: 0;
+  }
+
+}

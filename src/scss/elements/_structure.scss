@@ -54,3 +54,51 @@
   }
 
 }
+
+
+.sub-grid{
+
+  display: grid;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 70px ;
+
+  grid-template-areas:
+  "header  header   header  header"
+  "title   title    title   title"
+  "aside   image    image   description"
+  "aside   galerie  galerie  galerie";
+
+  .grid-header{
+    grid-area: header;
+  }
+  .grid-intro{
+    grid-area: title;
+  }
+  .grid-aside{
+    grid-area: aside;
+  }
+  .grid-image{
+    grid-area: image;
+  }
+  .grid-description{
+    grid-area: description;
+  }
+  .grid-gallery{
+    grid-area:galerie ;
+  }
+
+ }
+
+@media screen and (max-width: $vw-large) {
+.sub-grid{
+
+  grid-template-areas:
+          "header  header   header  header"
+          "aside aside aside aside"
+          "title   title    title   title"
+          "image   image  description description"
+          "galerie   galerie  galerie  galerie";
+}
+
+}
