@@ -2,9 +2,10 @@
 
   button{
     text-transform: uppercase;
-    padding: 20px;
-    border: 2px var(--color-text-primary) solid ;
+    letter-spacing: 0.2em;
+    padding: 15px;
+    border: 3px var(--color-text-primary) solid ;
 
-    background-color: var(--color-white);
+    background: none;
   }
 }
